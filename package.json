@@ -41,6 +41,7 @@
     "database"
   ],
   "license": "MIT",
+  "license_url": "https://opensource.org/licenses/MIT",
   "main": "index.js",
   "name": "megadb",
   "repository": {
