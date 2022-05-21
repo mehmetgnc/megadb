@@ -1,7 +1,7 @@
 # MegaDB
-> a JSON database module
+> JSON Veritabanı
 
-Examples
+Örnek
 
 ```js
 const ibidi = require("mega.db")
