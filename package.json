@@ -1,0 +1,49 @@
+{
+  "_args": [
+    [
+      "megadb@0.0.2",
+      ""
+    ]
+  ],
+  "_from": "megadb@0.0.2",
+  "_id": "megadb@0.0.2",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/megadb",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "megadb@0.0.2",
+    "name": "megadb",
+    "escapedName": "megadb",
+    "rawSpec": "0.0.2",
+    "saveSpec": null,
+    "fetchSpec": "0.0.2"
+  },
+  "_requiredBy": [],
+  "_spec": "0.0.2",
+  "author": {
+    "name": "MEGA",
+    "tag": "MEGA✧#2902"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security"
+  },
+  "description": "Json Veritabanı",
+  "homepage": "https://github.com/mehmetgnc/megadb#readme",
+  "keywords": [
+    "json",
+    "jsondb",
+    "db",
+    "database"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "megadb",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mehmetgnc/megadb.git"
+  },
+  "version": "0.0.2"
+}
