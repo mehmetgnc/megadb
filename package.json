@@ -24,6 +24,8 @@
   "_requiredBy": [],
   "_spec": "0.0.1",
   "author": {
+    "url" : "https://github.com/mehmetgnc/megadb" ,  
+    "e-mail" : "imehmetgenc@yandex.com"  
     "name": "MEGA",
     "tag": "MEGA✧#2902"
   },
