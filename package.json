@@ -1,22 +1,22 @@
 {
   "_args": [
     [
-      "megadb@0.0.1",
-      ""
+      "mega-db@0.0.1",
+      "mega-jsondb@0.0.1"
     ]
   ],
-  "_from": "megadb@0.0.1",
-  "_id": "megadb@0.0.1",
+  "_from": "mega-db@0.0.1",
+  "_id": "mega-db@0.0.1",
   "_inBundle": false,
   "_integrity": "",
-  "_location": "/megadb",
+  "_location": "../mega-db",
   "_phantomChildren": {},
   "_requested": {
     "type": "version",
     "registry": true,
-    "raw": "megadb@0.0.1",
-    "name": "megadb",
-    "escapedName": "megadb",
+    "raw": "mega-db@0.0.1",
+    "name": "mega-db",
+    "escapedName": "mega-db",
     "rawSpec": "0.0.1",
     "saveSpec": null,
     "fetchSpec": "0.0.1"
@@ -24,8 +24,6 @@
   "_requiredBy": [],
   "_spec": "0.0.1",
   "author": {
-    "url" : "https://github.com/mehmetgnc/megadb" ,  
-    "e-mail" : "imehmetgenc@yandex.com"  
     "name": "MEGA",
     "tag": "MEGA✧#2902"
   },
@@ -33,7 +31,7 @@
     "fs": "^0.0.1-security"
   },
   "description": "Json Veritabanı",
-  "homepage": "https://github.com/mehmetgnc/megadb#readme",
+  "homepage": "",
   "keywords": [
     "json",
     "jsondb",
@@ -41,7 +39,6 @@
     "database"
   ],
   "license": "MIT",
-  "license_url": "https://opensource.org/licenses/MIT",
   "main": "index.js",
   "name": "megadb",
   "repository": {

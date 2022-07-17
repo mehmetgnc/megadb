@@ -17,12 +17,12 @@ class megadb {
   set(db, data) {
     functions.fetchFiles(this.dbFolder, this.dbName);
 
-    if(!db || db != false) {
-      throw new TypeError(this.message["errors"]["blankName"]);
+    if(!db) {
+      console.log(this.message["errors"]["blankName"]);
     }
 
-    if(!data || db != false) {
-      throw new TypeError(this.message["errors"]["blankData"]);
+    if(!data && data != false) {
+      console.log(this.message["errors"]["blankData"]);
     }
 
     const content = JSON.parse(fs.readFileSync(`./${this.dbFolder}/${this.dbName}.json`, "utf8"));
@@ -40,7 +40,7 @@ class megadb {
   get(db) {
 
     if(!db) {
-      throw new TypeError(this.message["errors"]["blankName"]);
+      console.log(this.message["errors"]["blankName"]);
     }
 
     const content = JSON.parse(fs.readFileSync(`./${this.dbFolder}/${this.dbName}.json`, "utf8"));
@@ -52,7 +52,7 @@ class megadb {
   fetch(db) {
 
     if(!db) {
-      throw new TypeError(this.message["errors"]["blankName"]);
+      console.log(this.message["errors"]["blankName"]);
     }
 
     const content = JSON.parse(fs.readFileSync(`./${this.dbFolder}/${this.dbName}.json`, "utf8"));
@@ -64,7 +64,7 @@ class megadb {
   has(db) {
 
     if(!db) {
-      throw new TypeError(this.message["errors"]["blankName"]);
+      console.log(this.message["errors"]["blankName"]);
     }
 
     const content = JSON.parse(fs.readFileSync(`./${this.dbFolder}/${this.dbName}.json`, "utf8"));
@@ -77,7 +77,7 @@ class megadb {
     functions.fetchFiles(this.dbFolder, this.dbName);
 
     if(!db) {
-      throw new TypeError(this.message["errors"]["blankName"]);
+      console.log(this.message["errors"]["blankName"]);
     }
 
     const content = JSON.parse(fs.readFileSync(`./${this.dbFolder}/${this.dbName}.json`, "utf8"));
@@ -104,15 +104,15 @@ class megadb {
   add(db, number) {
     
     if(!db) {
-      throw new TypeError(this.message["errors"]["blankName"]);
+      console.log(this.message["errors"]["blankName"]);
     }
 
     if(!number) {
-      throw new TypeError(this.message["errors"]["blankData"]);
+      console.log(this.message["errors"]["blankData"]);
     }
 
     if(isNaN(number)) {
-      throw new TypeError(this.message["errors"]["blankNumber"]);
+      console.log(this.message["errors"]["blankNumber"]);
     }
 
     this.set(db, Number(this.get(db) ? (isNaN(this.get(db)) ? Number(number) : this.get(db)+Number(number)) : Number(number)));
@@ -124,15 +124,15 @@ class megadb {
   subtract(db, number) {
     
     if(!db) {
-      throw new TypeError(this.message["errors"]["blankName"]);
+      console.log(this.message["errors"]["blankName"]);
     }
 
     if(!number) {
-      throw new TypeError(this.message["errors"]["blankData"]);
+      console.log(this.message["errors"]["blankData"]);
     }
 
     if(isNaN(number)) {
-      throw new TypeError(this.message["errors"]["blankNumber"]);
+      console.log(this.message["errors"]["blankNumber"]);
     }
 
     if(this.get(db)-number <= 1) {
@@ -154,11 +154,11 @@ class megadb {
   push(db, data) {
 
     if(!db) {
-      throw new TypeError(this.message["errors"]["blankName"]);
+      console.log(this.message["errors"]["blankName"]);
     }
 
     if(!data) {
-      throw new TypeError(this.message["errors"]["blankData"]);
+      console.log(this.message["errors"]["blankData"]);
     }
 
     var arr = [];
@@ -182,11 +182,11 @@ class megadb {
   unpush(db, data) {
 
     if(!db) {
-      throw new TypeError(this.message["errors"]["blankName"]);
+      console.log(this.message["errors"]["blankName"]);
     }
 
     if(!data) {
-      throw new TypeError(this.message["errors"]["blankData"]);
+      console.log(this.message["errors"]["blankData"]);
     }
 
     var arr = [];
@@ -206,15 +206,15 @@ class megadb {
   delByPriority(data, number) {
 
     if(!data) {
-      throw new TypeError(this.message["errors"]["blankData"]);
+      console.log(this.message["errors"]["blankData"]);
     }
 
     if(!number) {
-      throw new TypeError(this.message["errors"]["blankNumber"]);
+      console.log(this.message["errors"]["blankNumber"]);
     }
 
     if(isNaN(number)) {
-      throw new TypeError(this.message["errors"]["blankNumber"]);
+      console.log(this.message["errors"]["blankNumber"]);
     }
 
     if(!this.get(data) || this.get(data).length < 1) {
@@ -242,19 +242,19 @@ class megadb {
   setByPriority(data, value, number) {
 
     if(!data) {
-      throw new TypeError(this.message["errors"]["blankData"]);
+      console.log(this.message["errors"]["blankData"]);
     }
 
     if(!value) {
-      throw new TypeError(this.message["errors"]["blankData"]);
+      console.log(this.message["errors"]["blankData"]);
     }
 
     if(!number) {
-      throw new TypeError(this.message["errors"]["blankNumber"]);
+      console.log(this.message["errors"]["blankNumber"]);
     }
 
     if(isNaN(number)) {
-      throw new TypeError(this.message["errors"]["blankNumber"]);
+      console.log(this.message["errors"]["blankNumber"]);
     }
 
     if(!this.get(data) || this.get(data).length < 1) {
